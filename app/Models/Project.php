@@ -24,4 +24,8 @@ class Project extends Model
         "release",
         "slug"
     ];
+
+    public function type(){
+        $this->belongsTo(Type::class);
+    }
 }
