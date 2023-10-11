@@ -1,0 +1,118 @@
+@use "bootstrap";
+@use "@fortawesome/fontawesome-free/css/all.min.css";
+@use "./partials/variables";
+@use "./partials/mixins";
+
+
+body{
+    font-family: 'Chakra Petch', sans-serif; 
+    background-image: url(/public/img/bg-body.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    .dropdown-menu{
+        background-color: #f536198a;
+
+        .dropdown-item {
+        
+        &:hover{
+            background-color: #1f0133;
+            }
+        }
+    }
+
+    .welcome-svg{
+        width: 50%;
+    }
+
+    .content{
+        .proj-card{
+            background-color: transparent;
+            color: white;
+            border-color: transparent;
+            border-radius: 2rem;
+
+
+            .card-img-top{
+                border-radius: 2rem;
+            }
+
+            a{
+                background-color: variables.$button-color;
+                border: 0;
+
+            &:hover{
+                @include mixins.box-shadow;
+                }
+            }
+        }
+        .more-button{
+            background-color: variables.$button-color;
+            border: 0;
+            width: 10%;
+        &:hover{
+            @include mixins.box-shadow;
+            }
+        }
+    }
+
+    .show-col{
+
+        .show-box{
+            a{
+                color: variables.$link-color;
+            }
+
+    };
+        .btn{
+            background-color: variables.$button-color;
+            border: 0;
+        &:hover{
+            @include mixins.box-shadow;
+            }
+        }
+    }
+
+    .edit-container{
+        height: 100vh;
+
+        button{
+            background-color: variables.$button-color;
+            border: 0;
+        
+        &:hover{
+            @include mixins.box-shadow;
+            background-color: variables.$button-color;
+            }
+        }
+    }
+
+    .index-container{
+        height: 100vh;
+
+        table{
+            
+            a{
+                background-color: variables.$button-color;
+                border: 0;
+            &:hover{
+                background-color: variables.$link-color;
+                }
+            }
+        }
+
+        .create-container{
+            
+            .btn{
+                background-color: variables.$button-color;
+                border: 0;
+            &:hover{
+                @include mixins.box-shadow;
+                }
+            }
+        }
+
+    }
+}
