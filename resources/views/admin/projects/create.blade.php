@@ -29,6 +29,20 @@
                         @enderror
                     </div>
 
+                    <div class="mb-3">
+                        <label for="type_id" class="form-label">Type</label>
+                        <select name="type_id" class="form-select @error('type_id') is-invalid                           
+                        @enderror" id="type_id">
+                            {{-- ciclo sulla tabella types per aggiugnere le option --}}
+                            @foreach($types as $type)
+                                <option value="{{$type->id}}"> {{$type->type}}</option>                                               
+                            @endforeach
+                        </select>
+                        @error("language")
+                            <div class="invalid-feedback">{{$message}}</div>
+                        @enderror
+                    </div>
+
                     {{-- link --}}
 
                     <div class="mb-3">

@@ -31,6 +31,8 @@
                     </div>
 
 
+                    {{-- TYPE --}}
+
                     <div class="mb-3">
                         <label for="type_id" class="form-label">Type</label>
                         <select name="type_id" class="form-select @error('type_id') is-invalid                           

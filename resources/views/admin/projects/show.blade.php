@@ -12,7 +12,7 @@
 
                     <p class="mt-2">{{$project->description}}</p>
 
-                    <p>Type: {{$project->type->type}}</p>
+                    <p>Type: {{$project->type->type ?? ""}}</p>
 
 
 
