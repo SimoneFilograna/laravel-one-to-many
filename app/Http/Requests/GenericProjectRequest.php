@@ -28,6 +28,8 @@ class GenericProjectRequest extends FormRequest
             "description"=>"required|string",
             "thumb"=>"nullable|image|max:5120",
             "release"=>"required|date",
+            "type_id"=>"exists:types,id"
+
         ];
     }
 

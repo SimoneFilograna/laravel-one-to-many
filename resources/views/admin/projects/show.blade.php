@@ -11,6 +11,11 @@
                     <small class="fw-bold">{{implode(",", $project->language )}}</small>
 
                     <p class="mt-2">{{$project->description}}</p>
+
+                    <p>Type: {{$project->type->type}}</p>
+
+
+
                     <a href="{{$project->link}}" class="fs-5 text-decoration-none">GitHub</a>
                     <p>Release: {{$project->release->format("d-m-Y")}}</p>
 

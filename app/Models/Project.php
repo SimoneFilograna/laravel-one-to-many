@@ -22,10 +22,11 @@ class Project extends Model
         "description",
         "thumb",
         "release",
-        "slug"
+        "slug",
+        "type_id"
     ];
 
     public function type(){
-        $this->belongsTo(Type::class);
+        return $this->belongsTo(Type::class);
     }
 }
